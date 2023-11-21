@@ -1,0 +1,38 @@
+# Magic 8 ball game with 10 questions. Ask a question to get a respond.
+import random
+import time
+ans1 = "It is certain"
+ans2 = "My sources say yes"
+ans3 = "Most defintely"
+ans4 = "Yes"
+ans5 = "Most likely"
+ans6 = "Reply hazy, try again"
+ans7 = "Maybe"
+ans8 = "Signs point to no"
+ans9 = "Not at this time"
+ans10 = "No"
+userName = input("Enter your first name: ")
+question = input(userName + ", what is your Yes/No question for the Magic 8 Ball?" )
+time.sleep(1.9)
+choice = random.randint (1,10)
+if choice == 1:
+    answer = ans1
+elif choice == 2:
+    answer = ans2
+elif choice == 3:
+    answer = ans3
+elif choice == 4:
+    answer = ans4
+elif choice == 5:
+    answer = ans5
+elif choice == 6:
+    answer = ans6
+elif choice == 7:
+    answer = ans7
+elif choice == 8:
+    answer = ans8
+elif choice == 9:
+    answer = ans9
+else:
+    answer = ans10
+print("Magic 8 Ball Replied:",answer)
